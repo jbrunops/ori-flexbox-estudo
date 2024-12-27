@@ -250,3 +250,40 @@ img {
     order: -1;
   }
 }
+
+.qualidade {
+  max-width: 60rem;
+  margin: 3.75rem auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .qualidade-item {
+    flex: 1 1 18.75rem;
+    margin: 1.25rem 0.625rem;
+
+    h2 {
+      font-size: 2.25rem;
+      color: #a4a4a4;
+      margin-bottom: 1.25rem;
+    }
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 30px;
+      margin-right: 10px;
+      background: blue;
+    }
+  }
+  .qualidade-item:nth-of-type(3n + 2) h2::before {
+    background: #d33535;
+  }
+  .qualidade-item:nth-of-type(3n + 3) h2::before {
+    background: #29d819;
+  }
+  .qualidade-item p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+  }
+}
