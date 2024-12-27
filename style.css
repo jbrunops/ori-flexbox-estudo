@@ -347,3 +347,23 @@ img {
     padding: 15px 10px;
   }
 }
+
+@media (max-width: 37.5rem) {
+  .newsletter-form button {
+    font-size: 1.5em;
+  }
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  background: #2c70ff;
+  align-items: center;
+
+  p {
+    flex: 1;
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+  }
+}
